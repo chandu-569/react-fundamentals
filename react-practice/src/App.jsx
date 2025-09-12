@@ -1,4 +1,4 @@
-import Profile from "./Profile.jsx"
+import Profile from "./profile";
 function App() {
 
 let c1="class"
@@ -8,6 +8,7 @@ const isStudent=true;
   return (
     
     <div>
+      <Profile />
       <p>hello react</p>
       <p>first {c1}</p>
     <p> my name is {name}</p>
