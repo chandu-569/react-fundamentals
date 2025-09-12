@@ -1,4 +1,4 @@
-
+import Profile from "./Profile.jsx"
 function App() {
 
 let c1="class"
