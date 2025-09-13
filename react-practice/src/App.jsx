@@ -1,20 +1,23 @@
-import Profile from "./profile";
-import ProductCard from "./ProductCard";
-function App() {
+// import Profile from "./profile";
+// import ProductCard from "./ProductCard";
+// import "./App.css"
+// import UserAvatar from "./UserAvatar";
+import Greeting from "./Greeting"
 
-let c1="class"
-let name="chandu"
-let age="20"
-const isStudent=true;
-let productname="cars"
-const prize=10000000
-const isavailable=true
+
+function App() {
+  // let c1="class"
+  // let name="chandu"
+  // let age="20"
+  // const isStudent=true;
+  let productname="cars"
+  const prize=10000000
+  // const isavailable=true
 
   return (
-    
-    <div>
-      <Profile />
-      <ProductCard/> 
+
+    <div className="display">
+      {/* <Profile />
       <p>hello react</p>
       <p>first {c1}</p>
     <p> my name is {name}</p>
@@ -23,7 +26,12 @@ const isavailable=true
     <br />
     <br />
     <br />
-    <ProductCard productnames={productname} prizes={prize} isavailables={isavailable}/>
+    <ProductCard productnames={productname} prizes={prize} isavailable={isavailable}/>
+    <ProductCard productnames={productname} prizes={prize} isavailable={false}/>
+
+    <UserAvatar/> */}
+    <Greeting productnames={productname} prizes={prize} />
+
     </div>
 
   )
