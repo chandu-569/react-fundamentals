@@ -1,9 +1,9 @@
-function ProductCard({productname,prize,isavailable})
+function ProductCard(props)
 {
     return(
         <div>
             
-            <p>product name={productname} , prize={prize}{isavailable}</p>
+            <p>product name={props.productnames} , prize={props.prizes}{props.isavailables}</p>
         </div>
     )
 }

@@ -23,7 +23,7 @@ const isavailable=true
     <br />
     <br />
     <br />
-    <ProductCard productname={productname} prize={prize} isavailable={isavailable}/>
+    <ProductCard productnames={productname} prizes={prize} isavailables={isavailable}/>
     </div>
 
   )
