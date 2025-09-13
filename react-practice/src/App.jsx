@@ -91,24 +91,28 @@ function App() {
 //     setpassword(event.target.value)
 //   }
 
-  const [formData,setformData]=useState(name,email,password)
-  setformData(
-    {
-      ...formData,
-      [event.target.name]:event.target.value
-    }
-  )
+  const [formData,setformData]=useState({
+    name:"",
+    email:"",
+    password:""})
+
    const submit=(event)=>
   {
     event.preventDefault();
-    alert(`name: ${formData.name}Email: ${formData.email}\n password: ${formData.password} \n ypu are logged in`)
+      console.log(event.target.name)
+    console.log(event.target.value)
+    alert(`${name}Email: ${formData.email}\n password: ${formData.password} \n ypu are logged in`)
   }
 
   const handlechange=(event)=>
   {
     
-    console.log(event.target.name)
-    console.log(event.target.value)
+      setformData(
+    {
+      ...formData,
+      [event.target.name]:event.target.value
+    }
+  )
   }
 
   //  const increment=(count)=>
