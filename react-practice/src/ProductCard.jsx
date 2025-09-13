@@ -1,4 +1,4 @@
-import "./ProductCard.css"
+// import "./ProductCard.css"
 
 function ProductCard({ productnames, prizes, isavailable }) {
     return (
@@ -6,7 +6,7 @@ function ProductCard({ productnames, prizes, isavailable }) {
 
             <p className="help">product name={productnames} </p>
             <p className="help1"> prize={prizes}</p>
-            productavailability : {isavailable ? <p className="green">"instock"</p> : <p className="red">"outstock"</p>}
+            {isavailable ? <p className="green">"instock"</p> : <p className="red">"outstock"</p>}
         </div>
     )
 }
